@@ -1,0 +1,13 @@
+ros-kinetic-mqtt-bridge (0.1.1-0wily) wily; urgency=high
+
+  * Add CHANGELOG.rst
+
+ -- Junya Hayashi <junya.hayashi@groove-x.com>  Sat, 03 Dec 2016 15:00:00 -0000
+
+ros-kinetic-mqtt-bridge (0.1.0-0wily) wily; urgency=high
+
+  * Initial Release
+
+ -- Junya Hayashi <junya.hayashi@groove-x.com>  Sat, 03 Dec 2016 15:00:00 -0000
+
+
