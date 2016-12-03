@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mqtt_bridge</name>
+  <version>0.1.1</version>
+  <description>The mqtt_bridge package</description>
+
+  <author email="junya.hayashi@groove-x.com">Junya Hayashi</author>
+  <maintainer email="junya.hayashi@groove-x.com">Junya Hayashi</maintainer>
+
+  <license>MIT</license>
+
+  <url type="website">https://bitbucket.org/groove-x/mqtt_bridge</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>rosbridge_library</depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <export>
+  </export>
+</package>
