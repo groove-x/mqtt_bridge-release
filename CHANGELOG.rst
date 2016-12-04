@@ -2,6 +2,10 @@
 Changelog for package mqtt_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.2 (2016-12-04)
+------------------
+* Fix CMakeLists.txt and package.xml
+
 0.1.1 (2016-12-04)
 ------------------
 * Add CHANGELOG.rst
