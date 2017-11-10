@@ -1,3 +1,26 @@
+## mqtt_bridge (kinetic) - 0.1.6-0
+
+The packages in the `mqtt_bridge` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release mqtt_bridge --track kinetic --rosdistro kinetic` on `Fri, 10 Nov 2017 11:42:17 -0000`
+
+The `mqtt_bridge` package was released.
+
+Version of package(s) in repository `mqtt_bridge`:
+
+- upstream repository: https://github.com/groove-x/mqtt_bridge.git
+- release repository: https://github.com/groove-x/mqtt_bridge-release.git
+- rosdistro version: `0.1.5-0`
+- old version: `0.1.5-0`
+- new version: `0.1.6-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.9`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## mqtt_bridge (kinetic) - 0.1.5-0
 
 The packages in the `mqtt_bridge` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release mqtt_bridge --track kinetic --rosdistro kinetic` on `Tue, 06 Dec 2016 18:12:56 -0000`
