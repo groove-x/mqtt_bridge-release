@@ -1,0 +1,12 @@
+Source: ros-lunar-mqtt-bridge
+Section: misc
+Priority: extra
+Maintainer: Junya Hayashi <junya.hayashi@groove-x.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://www.ros.org/wiki/mqtt_bridge
+Standards-Version: 3.9.2
+
+Package: ros-lunar-mqtt-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-rosbridge-library, ros-lunar-rospy, ros-lunar-std-msgs
+Description: The mqtt_bridge package
