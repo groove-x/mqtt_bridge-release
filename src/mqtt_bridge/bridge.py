@@ -68,7 +68,7 @@ class RosToMqttBridge(Bridge):
     def _callback_ros(self, msg):
         rospy.logdebug("ROS received from {}".format(self._topic_from))
         now = rospy.get_time()
-        if now - self._last_published > self._interval:
+        if now - self._last_published >= self._interval:
             self._publish(msg)
             self._last_published = now
 
@@ -95,9 +95,9 @@ class MqttToRosBridge(Bridge):
         self._queue_size = queue_size
         self._last_published = rospy.get_time()
         self._interval = None if frequency is None else 1.0 / frequency
-
-        self._mqtt_client.subscribe(topic_from)
-        self._mqtt_client.message_callback_add(topic_from, self._callback_mqtt)
+        # Adding the correct topic to subscribe to
+        self._mqtt_client.subscribe(self._topic_from)
+        self._mqtt_client.message_callback_add(self._topic_from, self._callback_mqtt)
         self._publisher = rospy.Publisher(
             self._topic_to, self._msg_type, queue_size=self._queue_size)
 
@@ -112,9 +112,12 @@ class MqttToRosBridge(Bridge):
         now = rospy.get_time()
 
         if self._interval is None or now - self._last_published >= self._interval:
-            ros_msg = self._create_ros_message(mqtt_msg)
-            self._publisher.publish(ros_msg)
-            self._last_published = now
+            try:
+                ros_msg = self._create_ros_message(mqtt_msg)
+                self._publisher.publish(ros_msg)
+                self._last_published = now
+            except Exception as e:
+                rospy.logerr(e)
 
     def _create_ros_message(self, mqtt_msg):
         u""" create ROS message from MQTT payload
