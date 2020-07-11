@@ -1,3 +1,26 @@
+## mqtt_bridge (melodic) - 0.1.7-1
+
+The packages in the `mqtt_bridge` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic mqtt_bridge --edit` on `Sat, 11 Jul 2020 08:45:11 -0000`
+
+The `mqtt_bridge` package was released.
+
+Version of package(s) in repository `mqtt_bridge`:
+
+- upstream repository: https://github.com/groove-x/mqtt_bridge.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.7-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.20`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.1`
+- vcstools version: `0.1.42`
+
+
 ## mqtt_bridge (kinetic) - 0.1.7-2
 
 The packages in the `mqtt_bridge` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic mqtt_bridge` on `Sun, 21 Jun 2020 05:01:38 -0000`
