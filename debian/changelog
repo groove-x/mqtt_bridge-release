@@ -1,0 +1,29 @@
+ros-melodic-mqtt-bridge (0.1.7-1stretch) stretch; urgency=high
+
+  * Fix mqtt subscribing to private path (#27 <https://github.com/groove-x/mqtt_bridge/issues/27>)
+  * Fix frequency limit (#26 <https://github.com/groove-x/mqtt_bridge/issues/26>)
+  * Add bson module in requirements.txt (#10 <https://github.com/groove-x/mqtt_bridge/issues/10>)
+  * Fix Bridge not to fall when ros msg cannot be created (#4 <https://github.com/groove-x/mqtt_bridge/issues/4>)
+  * Contributors: 5tan, Junya Hayashi, Tomas Cernik, Yuma Mihira, kapilPython
+
+ -- Junya Hayashi <junya.hayashi@groove-x.com>  Sat, 20 Jun 2020 15:00:00 -0000
+
+ros-melodic-mqtt-bridge (0.1.6-1stretch) stretch; urgency=high
+
+  * fix if frequency is none (#2 <https://github.com/groove-x/mqtt_bridge/issues/2>)
+
+ -- Junya Hayashi <junya.hayashi@groove-x.com>  Thu, 09 Nov 2017 15:00:00 -0000
+
+ros-melodic-mqtt-bridge (0.1.5-1stretch) stretch; urgency=high
+
+  * Update configurations
+
+ -- Junya Hayashi <junya.hayashi@groove-x.com>  Tue, 06 Dec 2016 15:00:00 -0000
+
+ros-melodic-mqtt-bridge (0.1.0-1stretch) stretch; urgency=high
+
+  * Initial Release
+
+ -- Junya Hayashi <junya.hayashi@groove-x.com>  Sat, 03 Dec 2016 15:00:00 -0000
+
+
