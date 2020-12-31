@@ -1,0 +1,12 @@
+Source: ros-noetic-mqtt-bridge
+Section: misc
+Priority: optional
+Maintainer: Junya Hayashi <junya.hayashi@groove-x.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pip, python3-setuptools, ros-noetic-catkin
+Homepage: http://www.ros.org/wiki/mqtt_bridge
+Standards-Version: 3.9.2
+
+Package: ros-noetic-mqtt-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-msgpack, python3-pymongo, ros-noetic-rosbridge-library, ros-noetic-rospy, ros-noetic-std-msgs
+Description: The mqtt_bridge package
